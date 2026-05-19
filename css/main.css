@@ -1,7 +1,7 @@
 :root {
-  --color-background: #FAF9F7;
+  --color-background: #faf9f7;
   --color-text: #333;
-  --color-accent: #8FAF8F;
+  --color-accent: #8faf8f;
   --font-heading: "Playfair Display", serif;
   --font-body: "Lato", sans-serif;
 }
@@ -73,7 +73,9 @@ body {
   font-family: var(--font-body);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-heading);
 }
 
@@ -119,7 +121,7 @@ h1, h2, h3 {
 }
 
 .card {
-    border: 2px solid var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
 
 .resume-section {
@@ -133,4 +135,3 @@ h1, h2, h3 {
 .resume-section h2 {
   color: var(--color-accent);
 }
-
