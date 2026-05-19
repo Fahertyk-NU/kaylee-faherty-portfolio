@@ -1,0 +1,16 @@
+{
+  "name": "kaylee-faherty-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio homepage built with vanilla HTML5, CSS3, and ES6+",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint js/",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.0"
+  },
+  "license": "MIT"
+}
