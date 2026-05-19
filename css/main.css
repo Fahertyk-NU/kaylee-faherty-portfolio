@@ -33,7 +33,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: #4382b1;
+  background: #8FAF8F;
 }
 
 .timeline-item {
@@ -52,5 +52,32 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #4382b1;
+  background: #8FAF8F;
+}
+
+:root {
+  --color-background: #FAF9F7;
+  --color-text: #333;
+  --color-accent: #8FAF8F;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
