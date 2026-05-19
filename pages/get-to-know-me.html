@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get to Know Me — Portfolio</title>
+    <meta
+      name="description"
+      content="A personal Q&amp;A — background, interests, and what drives my work in data science."
+    />
+    <meta name="author" content="Kaylee Faherty - Get to Know Me" />
+    <!-- Bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="../css/get-to-know-me.css" />
+  </head>
+
+  <body>
+    <!-- ════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════ -->
+    <nav class="site-nav navbar navbar-expand-md" aria-label="Main navigation">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html">
+          Kaylee<span>Faherty</span>
+        </a>
+
+        <!-- Hamburger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ════════════════════════════════════
+       HERO
+  ════════════════════════════════════ -->
+    <header class="hero" data-section="hero">
+      <div class="container">
+        <p class="hero-eyebrow">Get to Know Me</p>
+        <h1 class="hero-heading">
+          Simple questions.<br />
+          <em>Honest answers.</em>
+        </h1>
+        <p class="hero-sub">
+          I'm a data science student and former chemical engineer based in
+          Maine. Here's a little more about who I am beyond the resume.
+        </p>
+      </div>
+      <hr class="hero-divider container" />
+    </header>
+
+    <!-- ════════════════════════════════════
+       Q&A SECTION
+  ════════════════════════════════════ -->
+    <main class="qa-section" id="qa" data-section="qa">
+      <div class="container">
+        <div class="row">
+          <!-- Section intro -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="qa-intro">
+              <p class="section-label">Q &amp; A</p>
+              <div class="accent-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <h2>Things you might<br />want to know.</h2>
+              <p class="mt-3">Click any question to expand the answer.</p>
+            </div>
+          </div>
+
+          <!-- Q&A list -->
+          <div class="col-lg-7 offset-lg-1">
+            <div class="qa-list" role="list">
+              <!-- ── Q1 ── -->
+              <div class="qa-item" role="listitem">
+                <div
+                  class="qa-question"
+                  role="button"
+                  tabindex="0"
+                  aria-expanded="false"
+                >
+                  <span>How did you end up in data science?</span>
+                  <span class="qa-toggle-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4l3 3 3-3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="qa-answer">
+                  <p>
+                    Through my experience in chemical engineering, I completed a
+                    co-op in manufacturing and spent two years in R&amp;D, both
+                    in the paper and packaging industry. I found that the work I
+                    enjoyed most was using data to tell a story and inform
+                    decision-making.
+                  </p>
+                  <p>
+                    <span class="qa-tag">Querying</span>
+                    <span class="qa-tag">Visualization</span>
+                    <span class="qa-tag">Storytelling</span>
+                  </p>
+                  <p>
+                    I enrolled in Northeastern's Roux Institute Master's program
+                    to make that shift deliberate and structured. The
+                    engineering foundation turned out to transfer very well: an
+                    analytical problem-solving approach, a strong technical
+                    background, and experience communicating across many
+                    different business functions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ── Q2 ── -->
+              <div class="qa-item" role="listitem">
+                <div
+                  class="qa-question"
+                  role="button"
+                  tabindex="0"
+                  aria-expanded="false"
+                >
+                  <span>What do you do outside of work and school?</span>
+                  <span class="qa-toggle-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4l3 3 3-3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="qa-answer">
+                  <p>
+                    I love to be outside which in Maine means <strong>skiing</strong>, 
+                    <strong>snowshoeing</strong> and <strong>ice skating</strong>
+                    in the winter and <strong>golfing</strong>, <strong>hiking</strong>,  
+                    and <strong>camping</strong> in the summer.
+                  </p>
+                  <p>
+                    Outisde of being outdoors, I also love to cook and bake, and 
+                    recently started making my own bread. 
+                    I also enjoy knitting, working-out, and always have a podcast going.
+                  </p>
+                </div>
+              </div>
+
+              <!-- ── Q3 ── -->
+              <div class="qa-item" role="listitem">
+                <div
+                  class="qa-question"
+                  role="button"
+                  tabindex="0"
+                  aria-expanded="false"
+                >
+                  <span>Favorite genre of music?</span>
+                  <span class="qa-toggle-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4l3 3 3-3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="qa-answer">
+                  <p>
+                    Country is definitely my favorite genre, but my playlists are pretty varied.
+                    You'll also find pop, hip-hop, indie, and occasionally some rock depending on the mood.
+                  </p>
+                </div>
+              </div>
+              <!-- ── Q4 ── -->
+              <div class="qa-item" role="listitem">
+                <div
+                  class="qa-question"
+                  role="button"
+                  tabindex="0"
+                  aria-expanded="false"
+                >
+                  <span>Lake or Ocean?</span>
+                  <span class="qa-toggle-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4l3 3 3-3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="qa-answer">
+                  <p>
+                    Growing up in Maine I was lucky enough to be able to spend
+                    a lot of time on the water, and I really love both. But, if I
+                    had to choose, I'd say ocean.
+                  </p>
+                </div>
+              </div>
+            <!-- ── Q5 ── -->
+              <div class="qa-item" role="listitem">
+                <div
+                  class="qa-question"
+                  role="button"
+                  tabindex="0"
+                  aria-expanded="false"
+                >
+                  <span>Favorite thing about living in Maine?</span>
+                  <span class="qa-toggle-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4l3 3 3-3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="qa-answer">
+                  <p>
+                    The close proximity to nature and the abundance of outdoor activities.
+                    Every season has something special to offer - from the ocean and lakes to the mountains, there's always
+                    something to explore and enjoy.
+                  </p>
+                </div>
+              </div>
+              <!-- ── Q6 ── -->
+              <div class="qa-item" role="listitem">
+                <div
+                  class="qa-question"
+                  role="button"
+                  tabindex="0"
+                  aria-expanded="false"
+                >
+                  <span>Coffee or Tea?</span>
+                  <span class="qa-toggle-icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 4l3 3 3-3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="qa-answer">
+                  <p>
+                    Definitely tea - I actually don't like coffee at all. Green tea is my go-to, 
+                    hot in the winter and iced in the summer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- /.qa-list -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </main>
+
+    <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+    <footer class="site-footer" id="contact" data-section="contact">
+      <div class="container">
+        <div class="row align-items-start g-4">
+          <!-- Identity -->
+          <div class="col-md-5">
+            <p class="footer-name">Kaylee Faherty</p>
+            <p class="footer-tagline">
+              Data Science Student<br />
+              Northeastern University · Roux Institute · Portland, ME
+            </p>
+          </div>
+
+          <!-- Contact / Social -->
+          <div class="col-md-4">
+            <p class="section-label mb-3">Connect</p>
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="https://linkedin.com/in/kayleefaherty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Fahertyk-NU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Bottom bar -->
+        <div
+          class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2"
+        >
+          <span
+            >&copy; <span id="footer-year"></span> Kaylee Faherty. All rights
+            reserved.</span
+          >
+          <span>
+            Built with care
+            <span class="footer-dot"></span>
+            Portland, Maine
+          </span>
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Scroll-to-top -->
+    <button class="scroll-top-btn" aria-label="Scroll to top">
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M8 13V3M3 8l5-5 5 5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Page script -->
+    <script type="module" src="../js/get-to-know-me.js"></script>
+
+  </body>
+</html>

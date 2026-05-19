@@ -1,0 +1,488 @@
+/* ============================================================
+   get-to-know-me.css
+   Portfolio — Get to Know Me page
+   ============================================================ */
+
+/* ---------- Tokens ---------- */
+:root {
+  --accent:       #8FAF8F;
+  --accent-dark:  #6a9170;
+  --accent-light: #c4d9c4;
+  --bg:           #FAF9F7;
+  --bg-card:      #F3F1EE;
+  --text:         #2b2b2b;
+  --text-muted:   #6b6b6b;
+  --border:       #e0ddd8;
+  --nav-bg:       rgba(250, 249, 247, 0.88);
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body:    'Lato', sans-serif;
+
+  --radius:       4px;
+  --transition:   240ms ease;
+}
+
+/* ---------- Reset / Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Navbar ---------- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav .navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+
+.site-nav .navbar-brand span {
+  color: var(--accent-dark);
+}
+
+.site-nav .nav-link {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.site-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+  color: var(--text);
+}
+
+.site-nav .nav-link:hover::after,
+.site-nav .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* hamburger icon color */
+.navbar-toggler {
+  border: 1px solid var(--border);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232b2b2b' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 6rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-light) 0%, transparent 70%);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.hero-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.hero-heading em {
+  font-style: italic;
+  color: var(--accent-dark);
+}
+
+.hero-sub {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  max-width: 480px;
+  line-height: 1.8;
+}
+
+.hero-divider {
+  margin-top: 4rem;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Section header ---------- */
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- Q&A Section ---------- */
+.qa-section {
+  padding: 5rem 0 6rem;
+}
+
+.qa-intro {
+  max-width: 560px;
+  position: sticky;
+  top: 6rem;
+}
+
+.qa-intro h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.qa-intro p {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+/* Q&A List */
+.qa-list {
+  margin-top: 3.5rem;
+  counter-reset: qa-counter;
+}
+
+.qa-item {
+  position: relative;
+  padding: 2.25rem 0 2.25rem 3.5rem;
+  border-top: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.qa-item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.qa-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* numbered counter badge */
+.qa-item::before {
+  counter-increment: qa-counter;
+  content: counter(qa-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 2.35rem;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.qa-question {
+  font-family: var(--font-heading);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  user-select: none;
+}
+
+.qa-question:hover {
+  color: var(--accent-dark);
+}
+
+/* expand/collapse toggle icon */
+.qa-toggle-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.qa-toggle-icon svg {
+  width: 10px;
+  height: 10px;
+  stroke: var(--text-muted);
+  transition: stroke var(--transition), transform var(--transition);
+}
+
+.qa-item.open .qa-toggle-icon {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: rotate(0deg);
+}
+
+.qa-item.open .qa-toggle-icon svg {
+  stroke: #fff;
+  transform: rotate(180deg);
+}
+
+/* answer body */
+.qa-answer {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.35s ease,
+              margin 0.3s ease;
+  opacity: 0;
+  margin-top: 0;
+}
+
+.qa-item.open .qa-answer {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 0.25rem;
+}
+
+.qa-answer p {
+  margin-bottom: 0.75rem;
+}
+
+.qa-answer p:last-child {
+  margin-bottom: 0;
+}
+
+/* highlight tag inside an answer */
+.qa-tag {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.18em 0.6em;
+  border-radius: var(--radius);
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+/* ---------- Decorative accent bar ---------- */
+.accent-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.accent-bar span {
+  height: 2px;
+  background: var(--accent);
+}
+
+.accent-bar span:first-child { width: 40px; }
+.accent-bar span:nth-child(2) { width: 14px; opacity: 0.5; }
+.accent-bar span:nth-child(3) { width: 6px;  opacity: 0.25; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  padding: 3rem 0 2.25rem;
+}
+
+.footer-name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.footer-tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+
+.footer-links li a {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.footer-links li a:hover {
+  color: var(--accent-dark);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin: 0 0.6rem;
+  vertical-align: middle;
+}
+
+/* ---------- Scroll-to-top button ---------- */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+  z-index: 99;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+  background: var(--accent-dark);
+}
+
+.scroll-top-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+/* ---------- Utilities ---------- */
+.text-accent { color: var(--accent-dark); }
+.fw-serif    { font-family: var(--font-heading); }
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 576px) {
+  .hero {
+    padding: 4rem 0 2.5rem;
+  }
+
+  .qa-item {
+    padding-left: 2.75rem;
+  }
+
+  .scroll-top-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
