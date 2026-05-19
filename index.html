@@ -27,23 +27,34 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <nav
+        class="site-nav navbar navbar-expand-md"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">
+            Kaylee<span>Faherty</span>
+          </a>
+
+          <!-- Hamburger -->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link active" href="index.html" aria-current="page"
                   >Home</a
                 >
               </li>
@@ -109,8 +120,8 @@
           <li class="timeline-item">
             <h3 class="timeline-title">Packaging Corporation of America</h3>
             <p class="timeline-date">
-              May 2021 - August 2021 <br />
-              January 2022 - April 2022
+              Summer 2021 <br />
+              Spring 2022
             </p>
             <p class="timeline-description">
               Completed two co-op rotations as a process engineering co-op at
@@ -155,7 +166,7 @@
                   <h4 class="card-title">Resume</h4>
                   <p class="card-text">
                     An overview of my professional and academic background,
-                    experience and skills.
+                    experience, and skills.
                   </p>
                   <a href="pages/resume.html" class="btn btn-primary"
                     >View Resume Page</a

@@ -81,7 +81,7 @@ function initScrollTop() {
 /* ── Active nav link on scroll ── */
 function initActiveNav() {
   const sections = document.querySelectorAll("[data-section]");
-  const navLinks = document.querySelectorAll(".site-nav .nav-link[href^=\"#\"]");
+  const navLinks = document.querySelectorAll(".site-nav .nav-link[href^='#']");
 
   if (!sections.length || !navLinks.length) return;
 

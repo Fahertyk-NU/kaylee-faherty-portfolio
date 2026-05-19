@@ -64,11 +64,11 @@ Open `index.html` in a browser or visit the live site linked above.
 
 ## Pages
 
-| Page | URL | Description |
-|------|-----|-------------|
-| Homepage | `index.html` | Hero, timeline, and navigation cards |
-| Resume | `pages/resume.html` | Education, experience, projects, and skills |
-| Get to Know Me | `pages/get-to-know-me.html` | Personal Q&A — AI generated page |
+| Page           | URL                         | Description                                 |
+| -------------- | --------------------------- | ------------------------------------------- |
+| Homepage       | `index.html`                | Hero, timeline, and navigation cards        |
+| Resume         | `pages/resume.html`         | Education, experience, projects, and skills |
+| Get to Know Me | `pages/get-to-know-me.html` | Personal Q&A — AI generated page            |
 
 ---
 
@@ -82,10 +82,10 @@ Claude was used throughout this project as a sounding board and learning tool ra
 
 **Prompt used to generate the Get to Know Me page:**
 
-*"Please generate a 'Get to Know Me' personal Q&A page for my portfolio website. The page should include a navbar, 6 Q&A items with placeholder questions and answers, and a footer. Use Bootstrap 5.3.2, Google Fonts (Playfair Display for headings, Lato for body), accent color #8FAF8F, and background color #FAF9F7. Keep the design clean and minimal."*
+_"Please generate a 'Get to Know Me' personal Q&A page for my portfolio website. The page should include a navbar, 6 Q&A items with placeholder questions and answers, and a footer. Use Bootstrap 5.3.2, Google Fonts (Playfair Display for headings, Lato for body), accent color #8FAF8F, and background color #FAF9F7. Keep the design clean and minimal."_
 
 **Prompt used to generate the ReadMe framework:**
-*"Please write a README.md for my personal portfolio website project. Include the following sections: project name, Author, a link to the live site, Class Link, Project Objective, Screenshot, Tech Requirements, Instructions to Build, GenAI Usage, link to Video Demonstration, and License. The project is a personal portfolio homepage built with vanilla HTML5, CSS3, and ES6+, Bootstrap 5, ESLint and Prettier. Use GitHub Markdown formatting."*
+_"Please write a README.md for my personal portfolio website project. Include the following sections: project name, Author, a link to the live site, Class Link, Project Objective, Screenshot, Tech Requirements, Instructions to Build, GenAI Usage, link to Video Demonstration, and License. The project is a personal portfolio homepage built with vanilla HTML5, CSS3, and ES6+, Bootstrap 5, ESLint and Prettier. Use GitHub Markdown formatting."_
 
 All other HTML, CSS, and JavaScript was written by Kaylee Faherty.
 
@@ -94,6 +94,7 @@ All other HTML, CSS, and JavaScript was written by Kaylee Faherty.
 ## Video Demonstration
 
 <!-- Add link after recording -->
+
 [Watch the demo](#)
 
 ---

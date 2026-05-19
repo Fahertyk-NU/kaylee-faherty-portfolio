@@ -27,34 +27,45 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <nav
+        class="site-nav navbar navbar-expand-md"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <!-- Brand -->
+          <a class="navbar-brand" href="../index.html">
+            Kaylee<span>Faherty</span>
+          </a>
+
+          <!-- Hamburger -->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
               <li class="nav-item">
                 <a
                   class="nav-link active"
+                  href="resume.html"
                   aria-current="page"
-                  href="../index.html"
-                  >Home</a
+                  >Resume</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="get-to-know-me.html"
+                <a class="nav-link active" href="get-to-know-me.html"
                   >Get to Know Me</a
                 >
               </li>
@@ -69,7 +80,7 @@
         <h2>Education</h2>
         <div class="container">
           <h3 class="education-title">
-            The Roux Institute at Northeastern University
+            Northeastern University at the Roux Institute
           </h3>
           <p class="resume-description">Master of Science in Data Science</p>
           <p class="resume-gpa">GPA: 3.834</p>
