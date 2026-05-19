@@ -1,7 +1,15 @@
+:root {
+  --color-background: #FAF9F7;
+  --color-text: #333;
+  --color-accent: #8FAF8F;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+}
+
 .timeline-description {
   display: none;
   position: relative;
-  background: #4382b1;
+  background: var(--color-accent);
   color: white;
   padding: 15px;
   border-radius: 10px;
@@ -12,11 +20,6 @@
 
 .timeline-description.active {
   display: block;
-}
-
-.timeline {
-  display: flex;
-  list-style-type: none;
 }
 
 .timeline {
@@ -33,14 +36,18 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: #8FAF8F;
+  background: var(--color-accent);
 }
 
 .timeline-item {
   flex: 1;
   text-align: center;
   position: relative;
-  padding-top: 40px;
+  padding: 40px 20px;
+}
+
+.timeline-section {
+  padding: 20px 60px;
 }
 
 .timeline-item::before {
@@ -52,15 +59,12 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #8FAF8F;
+  background: var(--color-accent);
 }
 
-:root {
-  --color-background: #FAF9F7;
-  --color-text: #333;
-  --color-accent: #8FAF8F;
-  --font-heading: "Playfair Display", serif;
-  --font-body: "Lato", sans-serif;
+.timeline-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 body {
@@ -80,4 +84,40 @@ h1, h2, h3 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  border-color: var(--color-accent);
+}
+
+.hero {
+  background-size: cover;
+  color: var(--color-text);
+  text-align: left;
+  padding: 100px 10px;
+}
+
+.hero-image {
+  text-align: center;
+}
+
+.profile-pic {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.navigation-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+  padding: 20px 0;
+}
+
+.card {
+    border: 2px solid var(--color-accent);
 }
