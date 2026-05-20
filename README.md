@@ -93,9 +93,7 @@ All other HTML, CSS, and JavaScript was written by Kaylee Faherty.
 
 ## Video Demonstration
 
-<!-- Add link after recording -->
-
-[Watch the demo](#)
+[Watch the demo](https://youtu.be/GXs-L6Xexv0)
 
 ---
 
