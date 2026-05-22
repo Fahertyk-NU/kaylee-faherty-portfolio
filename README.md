@@ -7,7 +7,7 @@ A personal and professional portfolio homepage showcasing my professional and ac
 ## Author
 
 **Kaylee Faherty**
-[Live Site](https://fahertyk-nu.github.io/kaylee-faherty-portfolio/)
+[Live Site](https://fahertyk-nu.github.io/kaylee-faherty-portfolio/) --- Consider adding the author's email or LinkedIn link in the Author section
 
 ---
 
@@ -25,7 +25,7 @@ A personal and professional portfolio homepage for Kaylee Faherty, a data scienc
 
 ## Screenshot
 
-![Portfolio Screenshot](./images/screenshot.gif)
+![Portfolio Screenshot](./images/screenshot.gif) -- The screenshot uses a .gif file — a .png would load faster
 
 ---
 
