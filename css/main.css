@@ -30,7 +30,7 @@ main h1 {
 }
 
 .site-nav {
-  position: sticky;
+  position: sticky;  /* Nice implementation of the sticky navbar works really well on scroll */
   top: 0;
   z-index: 100;
   background: var(--nav-bg);
