@@ -495,7 +495,7 @@ a:hover {
 }
 
 /* ---------- Responsive tweaks ---------- */
-@media (max-width: 576px) {
+@media (max-width: 576px) {     /* Good use of a media query keeps the layout clean on smaller screens */
   .hero {
     padding: 4rem 0 2.5rem;
   }
