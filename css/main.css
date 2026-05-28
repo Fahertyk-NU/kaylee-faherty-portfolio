@@ -1,7 +1,9 @@
 :root {
   --color-background: #faf9f7;
   --color-text: #333;
-  --color-accent: #8faf8f;
+  --color-accent: #8faf8f;              /*color-accent and --accent both hold the same value #8faf8f.*/
+--color-accent: #8faf8f;
+--accent: #8faf8f;
   --accent-dark: #6a9170;
   --font-heading: "Playfair Display", serif;
   --font-body: "Lato", sans-serif;
@@ -10,8 +12,7 @@
   --text: #2b2b2b;
   --text-muted: #6b6b6b;
   --transition: 240ms ease;
-  --accent: #8faf8f;
-}
+  --accent: #8faf8f;    /* --color-accent and --accent both hold the same value */
 
 body {
   background-color: var(--color-background);
